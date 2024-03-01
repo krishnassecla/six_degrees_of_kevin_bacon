@@ -18,6 +18,8 @@ def load_data(directory):
     Load data from CSV files into memory.
     """
     # Load people
+    # I am changing the directory name for easier debugging purpose
+    directory = "small"
     with open(f"{directory}/people.csv", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
@@ -91,8 +93,14 @@ def shortest_path(source, target):
 
     If no possible path, returns None.
     """
+    
+
 
     # TODO
+    #1 Identify the actors with whom the source has starred (we know the target)
+    #2 Identify actors with whom other actors have starred
+    #3 Check if the actors match our target
+    
     raise NotImplementedError
 
 
